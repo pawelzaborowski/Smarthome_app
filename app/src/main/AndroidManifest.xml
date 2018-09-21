@@ -28,6 +28,12 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="pl.edu.pg.student.smarthome.activities.MainActivity" />
         </activity>
+        <activity
+            android:name=".activities.SettingsActivity"
+            android:label="@string/title_activity_settings" />
+        <activity android:name=".activities.DevicesActivity" />
+        <activity android:name=".activities.StatsActivity" />
+        <activity android:name=".activities.NewDeviceActivity"></activity>
     </application>
 
 </manifest>
