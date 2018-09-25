@@ -18,8 +18,8 @@
 
     <string name="pref_title_social_recommendations">Enable social recommendations</string>
     <string name="pref_description_social_recommendations">Recommendations for people to contact
-        based on your message history
-    </string>
+            based on your message history
+        </string>
 
     <string name="pref_title_display_name">Display name</string>
     <string name="pref_default_display_name">John Smith</string>
@@ -85,8 +85,4 @@
 
     <string name="polish_language">&#127477;&#127473; PL</string>
     <string name="english_language">&#127468;&#127463; ENG</string>
-    <string name="title_activity_stats">StatsActivity</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

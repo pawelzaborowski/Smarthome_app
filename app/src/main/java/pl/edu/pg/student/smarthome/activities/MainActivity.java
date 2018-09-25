@@ -3,10 +3,9 @@ package pl.edu.pg.student.smarthome.activities;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.content.res.Resources;
+import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
-import android.support.design.widget.Snackbar;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -15,19 +14,24 @@ import android.support.v7.widget.Toolbar;
 import android.util.DisplayMetrics;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
+import android.widget.TextView;
 
-import org.springframework.http.converter.StringHttpMessageConverter;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.Locale;
 
 import pl.edu.pg.student.smarthome.R;
+import pl.edu.pg.student.smarthome.models.WeatherModel;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     private int roomsNumber;
+    private String weather_url = "http://api.openweathermap.org/data/2.5/weather?q=gdansk,pl&APPID=";
+    private String smarthomeApi_url;
+    private TextView textView;
+    protected WeatherModel weather;
+    private String TAG = MainActivity.class.getSimpleName();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +50,15 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+//        select image here based on description
+        new GetWeather().execute();
+
+//        WeatherTemp tempP = this.weather.getMain();
+//        WeatherClouds cl = this.weather.getClouds();
+//        WeatherDesc[] d = this.weather.getWeather();
+//        WeatherWind w = this.weather.getWind();
+//        textView.setText(String.valueOf(tempP.getTemp()));
     }
 
     @Override
@@ -60,32 +73,27 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
+
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
+
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             return true;
         }
-        //todo locals
-//        if (id == R.id.choose_polish_language){
-//            setLocale("pl");
-//        }
-//        if (id == R.id.choose_english_language){
-//            setLocale("en");
-//        }
-//        if (id == R.id.refresh){
-//            new GetData().execute();
-//        }
+
+//        todo translate
+        if (id == R.id.choose_polish_language){
+            setLocale("pl");
+        }
+        if (id == R.id.choose_english_language){
+            setLocale("en");
+        }
 
         return super.onOptionsItemSelected(item);
     }
@@ -93,7 +101,7 @@ public class MainActivity extends AppCompatActivity
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
-        // Handle navigation view item clicks here.
+
         int id = item.getItemId();
 
         if (id == R.id.nav_rooms) {
@@ -149,14 +157,37 @@ public class MainActivity extends AppCompatActivity
 
     public void setLocale(String lang){
 
-        Locale myLocale = new Locale(lang);
+        Locale newLocale = new Locale(lang);
         Resources res = getResources();
         DisplayMetrics dm = res.getDisplayMetrics();
         Configuration conf = res.getConfiguration();
-        conf.locale = myLocale;
+        conf.locale = newLocale;
         res.updateConfiguration(conf, dm);
         Intent refresh = new Intent(this, MainActivity.class);
         startActivity(refresh);
         finish();
+    }
+
+    public class GetWeather extends AsyncTask<Void, Void, Void>{
+
+        @Override
+        protected void onPreExecute(){
+            super.onPreExecute();
+        }
+
+        @Override
+        protected Void doInBackground(Void... arg0) {
+
+            RestTemplate restTemplate = new RestTemplate();
+            weather = restTemplate.getForObject("http://api.openweathermap.org/data/2.5/weather?q=gdansk,pl&APPID=c052d034d955b18294cfa232c0975a78", WeatherModel.class);
+
+            return null;
+        }
+
+        @Override
+        protected void onPostExecute(Void result) {
+            super.onPostExecute(result);
+        }
+
     }
 }
