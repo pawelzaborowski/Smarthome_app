@@ -1,3 +1,71 @@
 <resources>
     <string name="app_name">Smarthome</string>
+    <string name="title_activity_main">Smarthome</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">SMARTHOME project</string>
+    <string name="nav_header_subtitle">gitlab.com/SmartHomeSystem/SmartHome</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_rooms">RoomsActivity</string>
+
+    <string name="polish_language">&#127477;&#127473; PL</string>
+    <string name="english_language">&#127468;&#127463; ENG</string>
+    <string name="title_activity_stats">StatsActivity</string>
+
+    <string name="dev_name">Dev name:</string>
+    <string name="room_name">Room name:</string>
+    <string name="status">Status:</string>
+    <string name="ip">IP:</string>
+    <string name="room_drawer">Rooms</string>
+    <string name="device_drawer">Devices</string>
+    <string name="profiles_drawer">Profiles</string>
+    <string name="energy_stats_drawer">Energy stats</string>
+    <string name="settings_drawer">Settings</string>
+    <string name="about_drawer">About</string>
+    <string name="devices">devices</string>
+    <string name="day">day</string>
+    <string name="night">night</string>
+    <string name="in">in</string>
+    <string name="out">out</string>
+    <string name="temperature">Temperature</string>
+    <string name="humidity">Humidity</string>
+    <string name="wind">Wind</string>
+    <string name="stats">stats</string>
+    <string name="properties_capital_letter">PROPERTIES</string>
+    <string name="name">Name</string>
+    <string name="add">Add</string>
+    <string name="number_of_rooms">Number of rooms</string>
+    <string name="accept">Accept</string>
+    <string name="add_new_device">New device</string>
+    <string name="active_profile">Active profile</string>
+    <string name="turn_off">Turn off</string>
+    <string name="remove_room">Remove room</string>
+    <string name="none">None</string>
+    <string name="no_such_room">There is no such room</string>
+    <string name="want_continue">Do you want to continue with wrong arguments</string>
+    <string-array name="status_positions">
+        <item>On</item>
+        <item>Off</item>
+    </string-array>
+
+    <string name="on">On</string>
+    <string name="no_data">No data</string>
+    <string name="rooms_action_bar">Rooms</string>
+    <string name="devices_action_bar">Devices</string>
+    <string name="edit_profile_action_bar">Edit Profile</string>
+    <string name="new_device_action_bar">New Device</string>
+    <string name="new_profile_action_bar">New Profile</string>
+    <string name="new_room_action_bar">New Room</string>
+    <string name="profiles_action_bar">Profiles</string>
+    <string name="weather_today">Today there is:</string>
+    <string name="off">Off</string>
+    <string name="about_action_bar">About us</string>
+    <string name="settings_action_bar">Settings</string>
+    <string name="update">Update Data</string>
+
+    <string name="off_capital">OFF</string>
+    <string name="on_capital">ON</string>
+    <string name="remove">Remove</string>
+
 </resources>

@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">Smarthome</string>
+    <string name="title_activity_main">Smarthome</string>
+    <string name="navigation_drawer_open">Otwórz menu</string>
+    <string name="navigation_drawer_close">Zamknij menu</string>
+    <string name="nav_header_title">SMARTHOME project</string>
+    <string name="nav_header_subtitle">gitlab.com/SmartHomeSystem/SmartHome</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Ustawienia</string>
+    <string name="title_activity_rooms">Pokoje</string>
+
+    <string name="polish_language">&#127477;&#127473; PL</string>
+    <string name="english_language">&#127468;&#127463; ENG</string>
+
+    <string name="title_activity_stats">StatsActivity</string>
+
+    <string name="dev_name">Nazwa urządzenia:</string>
+    <string name="room_name">Nazwa pokoju:</string>
+    <string name="status">Status:</string>
+    <string name="ip">IP:</string>
+    <string name="room_drawer">Pokoje</string>
+    <string name="device_drawer">Urządzenia</string>
+    <string name="profiles_drawer">Profile</string>
+    <string name="energy_stats_drawer">Statystyki zużycia</string>
+    <string name="settings_drawer">Ustawienia</string>
+    <string name="about_drawer">O nas</string>
+    <string name="devices">urządzenia</string>
+    <string name="day">dzień</string>
+    <string name="night">noc</string>
+    <string name="in">w</string>
+    <string name="out">poza</string>
+    <string name="temperature">Temperatura</string>
+    <string name="humidity">Wilgotność</string>
+    <string name="wind">Wiatr</string>
+    <string name="stats">statystyki</string>
+    <string name="properties_capital_letter">WŁAŚCIWOŚCI</string>
+    <string name="name">Nazwa</string>
+    <string name="add">Dodaj</string>
+    <string name="number_of_rooms">Liczba pokoi</string>
+    <string name="accept">Akceptuj</string>
+    <string name="add_new_device">Nowe urządzenie</string>
+    <string name="active_profile">Aktywny profil</string>
+    <string name="turn_off">Wyłącz</string>
+    <string name="remove_room">Usuń pokój</string>
+    <string name="none">None</string>
+    <string name="no_such_room">Nie ma takiego pokoju</string>
+    <string name="want_continue">Kontynuować mimo błędów?</string>
+    <string-array name="status_positions">
+        <item>Włączone</item>
+        <item>Wyłączone</item>
+    </string-array>
+
+    <string name="on">Włączone</string>
+    <string name="no_data">Brak danych</string>
+    <string name="rooms_action_bar">Pokoje</string>
+    <string name="devices_action_bar">Urządzenia</string>
+    <string name="edit_profile_action_bar">Edytuj Profil</string>
+    <string name="new_device_action_bar">Nowe Urządzenie</string>
+    <string name="new_profile_action_bar">Nowy Profil</string>
+    <string name="new_room_action_bar">Nowy Pokój</string>
+    <string name="profiles_action_bar">Profile</string>
+    <string name="weather_today">Dzisiaj jest:</string>
+    <string name="about_action_bar">O nas</string>
+    <string name="settings_action_bar">Ustawienia</string>
+    <string name="update">Pobierz dane</string>
+    <string name="off">Off</string>
+
+    <string name="off_capital">WŁ</string>
+    <string name="on_capital">WYŁ</string>
+    <string name="remove">Remove</string>
+
+</resources>

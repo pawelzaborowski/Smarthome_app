@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pl.edu.pg.student.smarthome.activities.NewDeviceActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <!--<TextView-->
+    <!--android:id="@+id/dev_name"-->
+    <!--android:layout_width="90dp"-->
+    <!--android:layout_height="53dp"-->
+    <!--android:layout_marginStart="16dp"-->
+    <!--android:text="@string/name"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--tools:layout_editor_absoluteY="16dp" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/room_name"-->
+    <!--android:layout_width="84dp"-->
+    <!--android:layout_height="53dp"-->
+    <!--android:layout_marginStart="4dp"-->
+    <!--android:layout_marginTop="96dp"-->
+    <!--android:text="@string/room_name"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/ip"-->
+    <!--android:layout_width="76dp"-->
+    <!--android:layout_height="53dp"-->
+    <!--android:layout_marginStart="16dp"-->
+    <!--android:text="@string/ip"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--tools:layout_editor_absoluteY="176dp" />-->
+
+    <!--<EditText-->
+    <!--android:id="@+id/dev_name_value"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="22dp"-->
+    <!--android:layout_marginEnd="1dp"-->
+    <!--android:ems="10"-->
+    <!--android:inputType="textPersonName"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintStart_toEndOf="@+id/room_name"-->
+    <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--<EditText-->
+    <!--android:id="@+id/room_name_value"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="31dp"-->
+    <!--android:layout_marginEnd="1dp"-->
+    <!--android:ems="10"-->
+    <!--android:inputType="textPersonName"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintStart_toEndOf="@+id/ip"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/dev_name_value" />-->
+
+    <!--<EditText-->
+    <!--android:id="@+id/ip_value"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="32dp"-->
+    <!--android:layout_marginEnd="1dp"-->
+    <!--android:ems="10"-->
+    <!--android:inputType="textPersonName"-->
+    <!--android:text="@string/ip"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintStart_toEndOf="@+id/dev_name"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/room_name_value" />-->
+
+    <Button
+        android:id="@+id/add"
+        style="@android:style/Widget.Material.Light.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/dev_name"
+        android:layout_width="166dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="@string/dev_name"
+        android:textAlignment="textStart"
+        android:textColor="@android:color/background_dark"
+        android:textSize="21sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/room_name"
+        android:layout_width="146dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="@string/room_name"
+        android:textAlignment="textStart"
+        android:textColor="@android:color/background_dark"
+        android:textSize="21sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dev_name"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/ip"
+        android:layout_width="139dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="@string/ip"
+        android:textAlignment="textStart"
+        android:textColor="@android:color/background_dark"
+        android:textSize="21sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/room_name"
+        tools:ignore="RtlCompat" />
+
+    <EditText
+        android:id="@+id/dev_name_value"
+        android:layout_width="190dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/room_name_value"
+        android:layout_width="190dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dev_name_value" />
+
+    <EditText
+        android:id="@+id/ip_value"
+        android:layout_width="190dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/room_name_value" />
+</android.support.constraint.ConstraintLayout>
